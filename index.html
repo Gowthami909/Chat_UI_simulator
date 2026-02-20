@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Simulator</title>
+    <link rel="stylesheet" href="Chat.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        💬  Chat Simulator
+        <div>
+            <button onclick="toggleTheme()">🌙</button>
+            <button onclick="clearChat()">🗑</button>
+        </div>
+    </div>
+
+    <div class="user-select">
+        <label>Select User: </label>
+        <select id="userSelect">
+            <option value="user1">User 1</option>
+            <option value="user2">User 2</option>
+        </select>
+    </div>
+
+    <div id="chatBox" class="chat-box"></div>
+
+    <div id="typingIndicator" class="typing hidden">
+        Typing...
+    </div>
+
+    <div class="chat-input">
+        <input type="file" id="fileInput" hidden>
+        <button onclick="fileInput.click()">📎</button>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="Chat.js"></script>
+</body>
+</html>
+
+
